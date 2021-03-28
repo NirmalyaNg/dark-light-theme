@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.box {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dark-btn,
+.light-btn {
+  width: 200px;
+  padding: 10px 13px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #30336b;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+.light-btn {
+  background-color: #7ed6df;
+  color: black;
+}
+
+.dark-btn:hover,
+.light-btn:hover {
+  opacity: 0.7;
+}
+.dark {
+  background-color: #30336b;
+  color: #dff9fb;
+}
+.light {
+  background-color: #c7ecee;
+  color: #4834d4;
+}
+
+@media screen and (max-width: 561px) {
+  .box {
+    font-size: 14px;
+  }
+}
